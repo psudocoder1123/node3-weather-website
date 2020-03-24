@@ -1,5 +1,5 @@
 
-console.log('client Side Javascript file is loaded')
+
 //fetch json data from url and save it to object..
 // fetch('http://puzzle.mead.io/puzzle').then((response)=>{
 //     response.json().then((data)=>{
