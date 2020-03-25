@@ -148,10 +148,17 @@ res.send('<h1>you are on  about</h1>')
 //app.com/help
 //app.com/about
 
-//to start server up and listen on specific port
-app.listen(3000,()=>{
-//call back function
-    console.log('Server is up on port 3000')
-})
+// //to start server up and listen on specific port
+// app.listen(3000,()=>{
+// //call back function
+//     console.log('Server is up on port 3000')
+// })
 
-//http://localhost:3001/
+//set port set by heroku
+const port=process.env.PORT  || 3000
+
+app.listen(port,()=>{
+    //call back function
+        console.log('Server is up on port '+port)
+    })
+    
